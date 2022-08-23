@@ -1,32 +1,9 @@
-# Prerequisites
-*.d
+# OI-Tools | Git Ignore
+# This source code file is under AGPLv3 License.
+# Copyright (c) 2022 hjl2011
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Config Files/Folders
+.vscode/
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# Temp Files
 *.exe
-*.out
-*.app

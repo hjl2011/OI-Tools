@@ -1,1 +1,18 @@
-# OI-Tools
+<h1 style="text-align:center;">OI-Tools</h1>
+<p style="text-align:center;">
+    <img src="https://img.shields.io/github/v/release/hjl2011/OI-Tools.svg?logo=iCloud&longCache=true">
+    <img src="https://img.shields.io/github/downloads/hjl2011/OI-Tools/total?label=GitHub%20Downloads&longCache=true">
+    <img src="https://img.shields.io/badge/support-Windows%207+-blue?logo=Windows&longCache=true">
+</p>
+
+本项目目前命令行部分仅支持英文，文档仅支持中文，欢迎提交 PR & Issue。
+
+## 命令
+
+`OI lg open user <uid>`  
+`OI lg open prob <pid>`  
+`OI lg open sol <pid>`
+
+## License
+
+[`AGPLv3`](https://github.com/hjl2011/OI-Tools/blob/main/LICENSE)
