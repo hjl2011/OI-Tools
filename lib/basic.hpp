@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "0.7.0"
+#define VERSION "0.8.0"
 
 #include <iostream>
 #include <vector>
@@ -17,12 +17,6 @@ using std::cout;
 using std::string;
 using std::vector;
 using std::to_string;
-
-vector <string> command;
-
-inline void Command_Init(int argc,char *argv[]) {
-    for(int i = 1;i < argc;i++) command.push_back(argv[i]);
-}
 
 inline void Check_Update(string ver) {
     if(freopen("C:/ProgramData/OI-Tools/check-update/data","r",stdin) == nullptr) {
@@ -45,5 +39,5 @@ inline void Check_Update(string ver) {
     ok :
     string str = "OI-Tools\nVersion : " + ver + "\nAuthor : hjl2011\n\n\nThis prompt box will pop up when you use it for the first time every month.";
     MessageBox(nullptr,str.c_str(),"OI-Tools",MB_OK | MB_ICONINFORMATION);
-    // todo : Update
+    // todo : Check Update
 }

@@ -17,6 +17,11 @@
 `OI lg open discuss <DiscussID>`  
 `OI lg open ide`
 
+`OI hydro open user <uid>`  
+`OI hydro open prob <pid>`  
+`OI hydro open domain <DomainName>`  
+`OI hydro open ide`
+
 ## License
 
 [`AGPLv3`](https://github.com/hjl2011/OI-Tools/blob/main/LICENSE)
