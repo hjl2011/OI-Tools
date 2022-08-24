@@ -1,7 +1,7 @@
 <h1 style="text-align:center;">OI-Tools</h1>
 <p style="text-align:center;">
-    <img src="https://img.shields.io/github/v/release/hjl2011/OI-Tools.svg?logo=iCloud&longCache=true">
-    <img src="https://img.shields.io/github/downloads/hjl2011/OI-Tools/total?label=GitHub%20Downloads&longCache=true">
+    <img src="https://img.shields.io/github/v/release/hjl2011/OI-Tools.svg?logo=GitHub">
+    <img src="https://img.shields.io/github/downloads/hjl2011/OI-Tools/total?label=GitHub%20Downloads&logo=GitHub">
     <img src="https://img.shields.io/badge/support-Windows%207+-blue?logo=Windows&longCache=true">
 </p>
 
