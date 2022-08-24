@@ -9,19 +9,6 @@
 
 本项目目前命令行部分仅支持英文，文档仅支持中文，欢迎提交 PR & Issue。
 
-## 命令
-
-`OI lg open user <uid>`  
-`OI lg open prob <pid>`  
-`OI lg open sol <pid>`  
-`OI lg open discuss <DiscussID>`  
-`OI lg open ide`
-
-`OI hydro open user <uid>`  
-`OI hydro open prob <pid>`  
-`OI hydro open domain <DomainName>`  
-`OI hydro open ide`
-
 ## License
 
 [`AGPLv3`](https://github.com/hjl2011/OI-Tools/blob/main/LICENSE)
