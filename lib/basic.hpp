@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "0.6.7-alpha.3"
+#define VERSION "0.7.0"
 
 #include <iostream>
 #include <vector>
@@ -24,25 +24,26 @@ inline void Command_Init(int argc,char *argv[]) {
     for(int i = 1;i < argc;i++) command.push_back(argv[i]);
 }
 
-inline void Show_Version(string ver) {
-    if(freopen("C:/ProgramData/OI-Tools/show-prompt/data","r",stdin) == nullptr) {
-        system("cd /d C:/ProgramData/ && mkdir OI-Tools && cd OI-Tools && mkdir show-prompt");
-        freopen("C:/ProgramData/OI-Tools/show-prompt/data","w",stdout);
+inline void Check_Update(string ver) {
+    if(freopen("C:/ProgramData/OI-Tools/check-update/data","r",stdin) == nullptr) {
+        system("cd /d C:/ProgramData/ && mkdir OI-Tools && cd OI-Tools && mkdir check-update");
+        freopen("C:/ProgramData/OI-Tools/check-update/data","w",stdout);
         SYSTEMTIME systime;
         GetLocalTime(&systime);
         printf("%d %d",systime.wYear,systime.wMonth);
         fclose(stdin),fclose(stdout);
-        goto show;
+        goto ok;
     } else {
         int Y,M;
         scanf("%d %d %d",&Y,&M);
         SYSTEMTIME systime;
         GetLocalTime(&systime);
-        if(Y < systime.wYear) goto show;
-        if(M < systime.wMonth) goto show;
+        if(Y < systime.wYear) goto ok;
+        if(M < systime.wMonth) goto ok;
         return ;
     }
-    show: 
+    ok :
     string str = "OI-Tools\nVersion : " + ver + "\nAuthor : hjl2011\n\n\nThis prompt box will pop up when you use it for the first time every month.";
     MessageBox(nullptr,str.c_str(),"OI-Tools",MB_OK | MB_ICONINFORMATION);
+    // todo : Update
 }
