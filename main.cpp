@@ -3,16 +3,21 @@
 // Copyright (c) 2022 hjl2011
 
 #include "lib/basic.hpp"
-#include "lib/update.hpp"
+#include "lib/commands.hpp"
 #include "lib/init.hpp"
 
 int main() {
-    Check_Update(VERSION);
     Init();
+    map <string,function <void()> >::iterator func;
     while(true) {
-        cin >> command;
-        if(command == "license") system("notepad LICENSE");
-        cout << ">>> ";
+        getline(cin,command);
+        func = commandlist.find(command);
+        if(func == commandlist.end()) {
+            printf("Error: The command you entered does not exist.");
+        } else {
+            func -> second();
+        }
+        printf("\n>>> ");
     }
     return 0;
 }

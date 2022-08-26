@@ -12,10 +12,18 @@
 #include <ctime>
 #include <windows.h>
 #include <cstdlib>
+#include <filesystem>
+#include <map>
+#include <functional>
 using std::cin;
 using std::cout;
 using std::string;
 using std::vector;
 using std::to_string;
+using std::getline;
+using std::map;
+using std::function;
+using std::make_pair;
 
 string command;
+map <string,function <void()> > commandlist;

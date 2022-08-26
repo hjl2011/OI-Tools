@@ -7,7 +7,7 @@ echo "
 
 "
 
-g++ main.cpp -o OI -std=c++14
+g++ main.cpp -o OI-Tools -std=c++17
 
 read -n 1 -p "
 
