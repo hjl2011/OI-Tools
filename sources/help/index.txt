@@ -1,0 +1,12 @@
+HELP
+ - Get help output.
+ - {HELP}
+LICENSE
+ - Print license information.
+ - {LICENSE}
+VERSION
+ - Print version information.
+ - {VERSION}
+EXIT
+ - Quit this program.
+ - {EXIT}

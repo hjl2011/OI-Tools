@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "0.8.0-alpha.3"
+#define VERSION "0.9.0-alpha.5"
 
 #include <iostream>
 #include <vector>
@@ -15,6 +15,8 @@
 #include <filesystem>
 #include <map>
 #include <functional>
+#include <fstream>
+#include <sstream>
 using std::cin;
 using std::cout;
 using std::string;
@@ -23,7 +25,12 @@ using std::to_string;
 using std::getline;
 using std::map;
 using std::function;
-using std::make_pair;
+using std::fstream;
+using std::ios;
+using std::stringstream;
 
-string command;
+string command,temp;
 map <string,function <void()> > commandlist;
+map <string,function <void()> >::iterator func;
+vector <string> commands;
+stringstream CommandInitStream;

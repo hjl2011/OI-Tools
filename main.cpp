@@ -3,21 +3,23 @@
 // Copyright (c) 2022 hjl2011
 
 #include "lib/basic.hpp"
+#include "lib/error.hpp"
 #include "lib/commands.hpp"
 #include "lib/init.hpp"
 
 int main() {
     Init();
-    map <string,function <void()> >::iterator func;
     while(true) {
         getline(cin,command);
-        func = commandlist.find(command);
+        CommandInit();
+        func = commandlist.find(commands[0]);
+        commands[0] = "";
         if(func == commandlist.end()) {
             printf("Error: The command you entered does not exist.");
         } else {
             func -> second();
         }
-        printf("\n>>> ");
+        cout << "\n>>> ";
     }
     return 0;
 }
