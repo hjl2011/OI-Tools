@@ -4,9 +4,9 @@
 
 #pragma once
 
-inline void GetHelpContent(string _path) {
-    fstream HelpFile(_path.c_str(),ios::in);
-    if(HelpFile.fail()) show_error(-1);
+inline void GetFileContent(string _path) {
+    fstream _FileStream(_path.c_str(),ios::in);
+    if(_FileStream.fail()) show_error(-1);
     string str;
-    while(getline(HelpFile,str)) cout << str << '\n';
+    while(getline(_FileStream,str)) cout << str << '\n';
 }

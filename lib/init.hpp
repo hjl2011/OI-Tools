@@ -5,8 +5,13 @@
 #pragma once
 
 inline void Init() {
-    cout << "OI-Tools | v" << VERSION << " | OK " << double(clock() / (double) CLOCKS_PER_SEC * 1000.00) << "ms\n";
-    cout << "Copyright (c) 2022 hjl2011\n";
+    cout << "OI-Tools | v" << VERSION << " | ";
+    if(string(VERSION).find("alpha") != string::npos) cout << "Alpha";
+    else if(string(VERSION).find("beta") != string::npos) cout << "Beta";
+    else if(string(VERSION).find("(LTS)") != string::npos) cout << "LTS";
+    else if(string(VERSION).find("(Release)") != string::npos) cout << "Release";
+    else cout << "Preview";
+    cout << "\nCopyright (c) 2022 hjl2011\n";
     cout << "Type \"help\", \"version\" or \"license\" for more information.\n\n>>> ";
     commandlist.insert({"version",Commands::version});
     commandlist.insert({"license",Commands::license});

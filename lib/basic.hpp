@@ -4,7 +4,15 @@
 
 #pragma once
 
-#define VERSION "0.9.1-alpha.1"
+#define VERSION "0.9.1"
+
+/*
+x.y.z-alpha.c       Alpha
+x.y.z-beta.c        Beta
+x.y.z (LTS)         LTS
+x.y.z (Release)     Release
+x.y.z               Preview
+*/
 
 #include <iostream>
 #include <vector>
