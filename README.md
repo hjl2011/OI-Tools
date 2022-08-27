@@ -9,10 +9,6 @@
 
 本项目目前命令行部分仅支持英文，文档仅支持中文，欢迎提交 PR & Issue。
 
-## License
+<h2>License</h2>
 
-[`AGPLv3`](https://github.com/hjl2011/OI-Tools/blob/main/LICENSE)
-
-## 声明
-
-请勿通过各种途径来关闭每月第一次使用时所弹出的对话框，否则您可能不会接收到更新。
+<a href="https://github.com/hjl2011/OI-Tools/blob/main/LICENSE"><code>AGPLv3</code></a>
