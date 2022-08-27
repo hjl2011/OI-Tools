@@ -5,9 +5,14 @@
 #pragma once
 
 inline void show_error(int errid) {
-    string err = string("OI-Tools | Error\n\nAn error occurred.\nError message: \n") + to_string(errid) + " ";
+    if(!errid) {
+        cout << "Error: The command you entered does not exist.";
+        return ;
+    }
+    string err = string("Oops!\nAn error occurred.\nError message :  ") + to_string(errid) + " ";
     if(errid == -1) err += "Unknown Error";
     else err += "Unknown Error";
-    if(MessageBox(nullptr,err.c_str(),"OI-Tools",MB_YESNO | MB_ICONERROR) == IDYES) system("start sources/website/issues.url");
+    err += "\n\nWould you like to visit the Issues page now?";
+    if(MessageBox(nullptr,err.c_str(),"OI-Tools Error",MB_YESNO | MB_ICONERROR) == IDYES) system("start sources/website/issues.url");
     exit(0);
 }

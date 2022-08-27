@@ -13,12 +13,9 @@ int main() {
         getline(cin,command);
         CommandInit();
         func = commandlist.find(commands[0]);
-        commands[0] = "";
-        if(func == commandlist.end()) {
-            printf("Error: The command you entered does not exist.");
-        } else {
-            func -> second();
-        }
+        commands.pop_front();
+        if(func == commandlist.end()) show_error(0);
+        else func -> second();
         cout << "\n>>> ";
     }
     return 0;

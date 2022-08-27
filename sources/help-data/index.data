@@ -1,3 +1,6 @@
+EXIT
+ - Quit this program.
+ - {EXIT}
 HELP
  - Get help output.
  - {HELP}
@@ -7,6 +10,3 @@ LICENSE
 VERSION
  - Print version information.
  - {VERSION}
-EXIT
- - Quit this program.
- - {EXIT}
