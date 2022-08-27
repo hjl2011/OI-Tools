@@ -4,6 +4,7 @@
 
 #include "lib/basic.hpp"
 #include "lib/error.hpp"
+#include "lib/apis.hpp"
 #include "lib/commands.hpp"
 #include "lib/init.hpp"
 

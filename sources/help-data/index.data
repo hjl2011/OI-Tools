@@ -3,7 +3,7 @@ EXIT
  - {EXIT}
 HELP
  - Get help output.
- - {HELP}
+ - {HELP},{HELP [command-name]}
 LICENSE
  - Print license information.
  - {LICENSE}

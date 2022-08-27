@@ -22,11 +22,13 @@ namespace Commands {
         _exit(0);
     }
     inline void help() {
-        if(commandlist.size()) return show_error(0);
-        fstream HelpFile("sources/help-data/index.data",ios::in);
-        if(HelpFile.fail()) show_error(-1);
-        string str;
-        system("cls");
-        while(getline(HelpFile,str)) cout << str << '\n';
+        if(!commands.size()) GetHelpContent("sources/help-data/index.data");
+        else if(commands.size() == 1) {
+            if(commands[0] == "exit") GetHelpContent("sources/help-data/info/exit.data");
+            else if(commands[0] == "help") GetHelpContent("sources/help-data/info/help.data");
+            else if(commands[0] == "license") GetHelpContent("sources/help-data/info/license.data");
+            else if(commands[0] == "version") GetHelpContent("sources/help-data/info/version.data");
+            else show_error(0);
+        } else show_error(0);
     }
 }

@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "0.9.0-alpha.6"
+#define VERSION "0.9.1-alpha.1"
 
 #include <iostream>
 #include <vector>
