@@ -7,12 +7,12 @@
     <img src="https://img.shields.io/github/languages/code-size/hjl2011/OI-Tools?color=orange&logo=GitHub&longCache=true">
 </p>
 
-本项目目前命令行部分仅支持英文，文档仅支持中文，欢迎提交 PR & Issue。
+本项目目前命令行部分仅支持英文，文档仅支持中文，欢迎提交 PR &amp; Issue。
 
 如果有疑问或者想增加新功能，请使用 <a href="https://github.com/hjl2011/OI-Tools/discussions"><code>Discussions</code></a>。
 
 如果本项目有 bug 或其他可能让人产生误解的东西，请使用 <a href="https://github.com/hjl2011/OI-Tools/issues"><code>Issues</code></a>。
 
-<h2>License</h2>
+## License
 
-<a href="https://github.com/hjl2011/OI-Tools/blob/main/LICENSE"><code>AGPLv3</code></a>
+<a href="https://github.com/hjl2011/OI-Tools/blob/main/LICENSE"><code>MIT License</code></a>
