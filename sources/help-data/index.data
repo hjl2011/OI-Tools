@@ -14,6 +14,10 @@ license
  - Print license information.
  - {license}
 
+luogu-open
+ - Open something.
+ - {luogu-open [type] [id (optional)]}
+
 version
  - Print version information.
  - {version}

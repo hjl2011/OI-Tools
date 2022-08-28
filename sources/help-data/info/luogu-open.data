@@ -1,0 +1,11 @@
+Open something.
+
+Usage: luogu-open [type] [id (optional)]
+
+Example:
+  - luogu-open ide
+  - luogu-open prob P1000
+  - luogu-open training 100
+  - luogu-open contest 1
+  - luogu-open discuss 5
+  - luogu-open team 1000
