@@ -30,6 +30,6 @@ namespace Commands {
     }
     inline void wiki() {
         if(commands.size()) return show_error(0);
-        system("start https://github.com/hjl2011/OI-Tools/wiki");
+        system("start sources/website/wiki.url");
     }
 };
