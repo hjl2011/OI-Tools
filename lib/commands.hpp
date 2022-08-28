@@ -20,12 +20,7 @@ namespace Commands {
     inline void help() {
         if(!commands.size()) GetFileContent("sources/help-data/index.data");
         else if(commands.size() == 1) {
-            if(commands[0] == "exit") GetFileContent("sources/help-data/info/exit.data");
-            else if(commands[0] == "help") GetFileContent("sources/help-data/info/help.data");
-            else if(commands[0] == "license") GetFileContent("sources/help-data/info/license.data");
-            else if(commands[0] == "version") GetFileContent("sources/help-data/info/version.data");
-            else if(commands[0] == "goto") GetFileContent("sources/help-data/info/goto.data");
-            else if(commands[0] == "wiki") GetFileContent("sources/help-data/info/wiki.data");
+            if(~_access(("sources/help-data/info/" + commands[0] + ".data").c_str(),F_OK)) GetFileContent(string("sources/help-data/info/" + commands[0] + ".data"));
             else show_error(0);
         } else show_error(0);
     }
@@ -37,4 +32,7 @@ namespace Commands {
         if(commands.size()) return show_error(0);
         system("start https://github.com/hjl2011/OI-Tools/wiki");
     }
+    namespace luogu {
+        namespace 
+    };
 };

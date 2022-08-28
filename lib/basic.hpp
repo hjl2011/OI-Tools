@@ -26,6 +26,7 @@ x.y.z               Preview
 #include <fstream>
 #include <sstream>
 #include <deque>
+#include <io.h>
 using std::cin;
 using std::cout;
 using std::string;
