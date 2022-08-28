@@ -26,13 +26,10 @@ namespace Commands {
     }
     inline void _goto() {
         if(commands.size() != 1) return show_error(0);
-        system(string("start " + commands[0]).c_str());
+        system(string("start " + _commands[0]).c_str());
     }
     inline void wiki() {
         if(commands.size()) return show_error(0);
         system("start https://github.com/hjl2011/OI-Tools/wiki");
     }
-    namespace luogu {
-        namespace 
-    };
 };

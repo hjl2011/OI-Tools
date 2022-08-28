@@ -16,3 +16,7 @@
 ## License
 
 <a href="https://github.com/hjl2011/OI-Tools/blob/main/LICENSE"><code>MIT License</code></a>
+
+## 鸣谢
+
+- 借鉴了一些 <a href="https://github.com/class-tools/Web-Class-Helper">Web Class Helper</a> 的函数、变量、想法等，在此对 WCH 的开发人员们（除了 <code>hjl2011</code>）表示膜拜。

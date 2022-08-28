@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "0.9.2"
+#define VERSION "0.9.2-alpha.5"
 
 /*
 x.y.z-alpha.c       Alpha
@@ -44,4 +44,5 @@ string command,temp;
 map <string,function <void()> > commandlist;
 map <string,function <void()> >::iterator func;
 deque <string> commands;
+deque <string> _commands;
 stringstream CommandInitStream;
