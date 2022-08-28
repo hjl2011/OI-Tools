@@ -1,12 +1,23 @@
-EXIT
+exit
  - Quit this program.
- - {EXIT}
-HELP
+ - {exit}
+
+goto
+ - Jump to a web address. (In your default browser.)
+ - {goto [url]}
+
+help
  - Get help output.
- - {HELP},{HELP [command-name]}
-LICENSE
+ - {help},{help [command-name]}
+
+license
  - Print license information.
- - {LICENSE}
-VERSION
+ - {license}
+
+version
  - Print version information.
- - {VERSION}
+ - {version}
+
+wiki
+ - Jump to the wiki page. (In your default browser.)
+ - {wiki}

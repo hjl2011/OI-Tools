@@ -1,0 +1,9 @@
+Jump to a web address. (In your default browser.)
+
+Usage: goto [url]
+
+Uncorrect:
+    goto "https://hjl2011.github.io/OI-Tools/"
+
+Correct:
+    goto https://hjl2011.github.io/OI-Tools/

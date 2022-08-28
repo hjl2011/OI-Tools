@@ -17,6 +17,8 @@ inline void Init() {
     commandlist.insert({"license",Commands::license});
     commandlist.insert({"exit",Commands::exit});
     commandlist.insert({"help",Commands::help});
+    commandlist.insert({"goto",Commands::_goto});
+    commandlist.insert({"wiki",Commands::wiki});
 }
 
 inline void CommandInit() {

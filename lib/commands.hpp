@@ -24,7 +24,17 @@ namespace Commands {
             else if(commands[0] == "help") GetFileContent("sources/help-data/info/help.data");
             else if(commands[0] == "license") GetFileContent("sources/help-data/info/license.data");
             else if(commands[0] == "version") GetFileContent("sources/help-data/info/version.data");
+            else if(commands[0] == "goto") GetFileContent("sources/help-data/info/goto.data");
+            else if(commands[0] == "wiki") GetFileContent("sources/help-data/info/wiki.data");
             else show_error(0);
         } else show_error(0);
     }
-}
+    inline void _goto() {
+        if(commands.size() != 1) return show_error(0);
+        system(string("start " + commands[0]).c_str());
+    }
+    inline void wiki() {
+        if(commands.size()) return show_error(0);
+        system("start https://github.com/hjl2011/OI-Tools/wiki");
+    }
+};
