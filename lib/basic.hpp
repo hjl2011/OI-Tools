@@ -1,10 +1,10 @@
 // OI-Tools | Lib | Basic
-// This source code file is under AGPLv3 License.
+// This source code file is under MIT License.
 // Copyright (c) 2022 hjl2011
 
 #pragma once
 
-#define VERSION "0.9.3"
+#define VERSION "0.9.4"
 
 /*
 x.y.z-alpha.c       Alpha

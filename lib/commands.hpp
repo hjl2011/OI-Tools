@@ -1,5 +1,5 @@
 // OI-Tools | Lib | Commands
-// This source code file is under AGPLv3 License.
+// This source code file is under MIT License.
 // Copyright (c) 2022 hjl2011
 
 #pragma once
@@ -18,9 +18,9 @@ namespace Commands {
         _exit(0);
     }
     inline void help() {
-        if(!commands.size()) GetFileContent("sources/help-data/index.data");
+        if(!commands.size()) GetFileContent("help-data/index.data");
         else if(commands.size() == 1) {
-            if(~_access(("sources/help-data/info/" + commands[0] + ".data").c_str(),F_OK)) GetFileContent(string("sources/help-data/info/" + commands[0] + ".data"));
+            if(~_access(("help-data/info/" + commands[0] + ".data").c_str(),F_OK)) GetFileContent(string("help-data/info/" + commands[0] + ".data"));
             else show_error(0);
         } else show_error(0);
     }
@@ -30,7 +30,7 @@ namespace Commands {
     }
     inline void wiki() {
         if(commands.size()) return show_error(0);
-        system("start sources/website/wiki.url");
+        system("start website/wiki.url");
     }
     inline void luogu_open() {
         if(commands.size() != 1 && commands.size() != 2) return show_error(0);

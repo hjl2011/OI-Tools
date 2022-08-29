@@ -1,5 +1,5 @@
 // OI-Tools | Main
-// This source code file is under AGPLv3 License.
+// This source code file is under MIT License.
 // Copyright (c) 2022 hjl2011
 
 #include "lib/basic.hpp"

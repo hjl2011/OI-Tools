@@ -1,5 +1,5 @@
 // OI-Tools | Lib | APIs
-// This source code file is under AGPLv3 License.
+// This source code file is under MIT License.
 // Copyright (c) 2022 hjl2011
 
 #pragma once
