@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "0.9.4"
+#define VERSION "0.9.5 (Release)"
 
 /*
 x.y.z-alpha.c       Alpha
@@ -35,10 +35,11 @@ using std::to_string;
 using std::getline;
 using std::map;
 using std::function;
-using std::fstream;
+using std::ifstream;
 using std::ios;
 using std::stringstream;
 using std::deque;
+using std::fstream;
 
 string command,temp;
 map <string,function <void()> > commandlist;

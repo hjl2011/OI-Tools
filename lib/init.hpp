@@ -6,9 +6,10 @@
 
 inline void Init() {
     string GenerateTimeStamp;
-    // freopen("TIMESTAMP","r",stdin);
-    // cin >> GenerateTimeStamp;
-    // fclose(stdin);
+    ifstream TimeStampFile("TIMESTAMP");
+    if(TimeStampFile.fail()) return show_error(1);
+    TimeStampFile >> GenerateTimeStamp;
+    TimeStampFile.close();
     cout << "OI-Tools | v" << VERSION << " | ";
     if(string(VERSION).find("alpha") != string::npos) cout << "Alpha";
     else if(string(VERSION).find("beta") != string::npos) cout << "Beta";

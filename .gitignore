@@ -8,6 +8,7 @@
 # Temp Files
 *.exe
 
-# Local Files
+# Local Files/Folders
+src/
 *.py
 generate.cpp
