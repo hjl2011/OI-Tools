@@ -40,6 +40,7 @@ namespace Commands {
         else if(commands.size() == 2 && commands[0] == "contest") system(("start https://www.luogu.com.cn/contest/" + _commands[1]).c_str());
         else if(commands.size() == 2 && commands[0] == "discuss") system(("start https://www.luogu.com.cn/discuss/" + _commands[1]).c_str());
         else if(commands.size() == 2 && commands[0] == "team") system(("start https://www.luogu.com.cn/team/" + _commands[1]).c_str());
+        else if(commands.size() == 2 && commands[0] == "user") system(("start https://www.luogu.com.cn/user/" + _commands[1]).c_str());
         else show_error(0);
     }
 };
