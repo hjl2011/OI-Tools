@@ -13,6 +13,7 @@ int main() {
     while(true) {
         getline(cin,command);
         CommandInit();
+        if(commands.size() == 0) {cout << "\n>>> ";continue;}
         func = commandlist.find(commands[0]);
         commands.pop_front();
         _commands.pop_front();
