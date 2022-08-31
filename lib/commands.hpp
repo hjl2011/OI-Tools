@@ -43,4 +43,12 @@ namespace Commands {
         else if(commands.size() == 2 && commands[0] == "user") system(("start https://www.luogu.com.cn/user/" + _commands[1]).c_str());
         else show_error(0);
     }
+    inline void hydro_open() {
+        if(commands.size() != 1 && commands.size() != 2) return show_error(0);
+        if(commands.size() == 1 && commands[0] == "ide") system("start https://hydro.ac/ide");
+        else if(commands.size() == 2 && commands[0] == "prob") system(("start https://hydro.ac/p/" + _commands[1]).c_str());
+        else if(commands.size() == 2 && commands[0] == "domain") system(("start https://hydro.ac/d/" + _commands[1] + "/").c_str());
+        else if(commands.size() == 2 && commands[0] == "user") system(("start https://hydro.ac/user/" + _commands[1]).c_str());
+        else show_error(0);
+    }
 };

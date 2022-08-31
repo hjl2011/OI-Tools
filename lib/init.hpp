@@ -25,10 +25,11 @@ inline void Init() {
     commandlist.insert({"goto",Commands::_goto});
     commandlist.insert({"wiki",Commands::wiki});
     commandlist.insert({"luogu-open",Commands::luogu_open});
+    commandlist.insert({"hydro-open",Commands::hydro_open});
 }
 
 inline void CommandInit() {
-    commands.clear(),CommandInitStream.clear(),CommandInitStream.str(command);
+    commands.clear(),_commands.clear(),CommandInitStream.clear(),CommandInitStream.str(command);
     while(CommandInitStream >> temp) {
         _commands.push_back(temp);
         for(int i = 0;i < temp.length();i++) if((temp[i] >= 'a' && temp[i] <= 'z') || (temp[i] >= 'A' && temp[i] <= 'Z')) temp[i] |= 32;

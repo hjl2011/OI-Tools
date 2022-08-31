@@ -1,0 +1,9 @@
+Open something.
+
+Usage: hydro-open [type] [id (optional)]
+
+Example:
+  - hydro-open ide
+  - hydro-open prob H1000
+  - hydro-open domain luogu
+  - hydro-open user 0

@@ -10,6 +10,10 @@ help
  - Get help output.
  - {help},{help [command-name]}
 
+hydro-open
+ - Open something.
+ - {hydro-open [type] [id (optional)]}
+
 license
  - Print license information.
  - {license}
