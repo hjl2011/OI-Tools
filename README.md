@@ -24,3 +24,5 @@
 ## 其他
 
 请勿更改 `Release` 中的 `TIMESTAMP` 文件，谢谢。
+
+建议使用 `vscode` 运行。
