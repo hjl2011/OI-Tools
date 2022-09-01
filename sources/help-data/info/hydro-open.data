@@ -6,4 +6,4 @@ Example:
   - hydro-open ide
   - hydro-open prob H1000
   - hydro-open domain luogu
-  - hydro-open user 0
+  - hydro-open user -1
