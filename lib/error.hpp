@@ -6,7 +6,7 @@
 
 inline void show_error(int errid) {
     if(!errid) {
-        cout << "Error: The command you entered does not exist.";
+        PrintERR("Error: The command you entered does not exist.");
         return ;
     }
     string err = string("Oops!\nAn error occurred.\nError message :  ") + to_string(errid) + " ";

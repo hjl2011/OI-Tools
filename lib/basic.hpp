@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "1.0.1"
+#define VERSION "1.0.2"
 
 /*
 x.y.z-alpha.c       Alpha
@@ -47,3 +47,9 @@ map <string,function <void()> >::iterator func;
 deque <string> commands;
 deque <string> _commands;
 stringstream CommandInitStream;
+
+inline void PrintERR(string str) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY | FOREGROUND_RED);
+    cout << str;
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7);
+}

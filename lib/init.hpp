@@ -15,7 +15,7 @@ inline void Init() {
     else if(string(VERSION).find("beta") != string::npos) cout << VERSION << " | Beta";
     else if(string(VERSION).find("(LTS)") != string::npos) cout << string(VERSION).erase(string(VERSION).find("(LTS)"))  << "| LTS";
     else if(string(VERSION).find("(Release)") != string::npos) cout << string(VERSION).erase(string(VERSION).find("(Release)")) << "| Release";
-    else cout << "Preview";
+    else cout << VERSION << " | Preview";
     cout << " | " << GenerateTimeStamp << "\nCopyright (c) 2022 hjl2011\n";
     cout << "Type \"help\", \"version\" or \"license\" for more information.\n\n>>> ";
     commandlist.insert({"version",Commands::version});
