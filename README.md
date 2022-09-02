@@ -16,7 +16,7 @@
 
 ## License
 
-<a href="https://github.com/hjl2011/OI-Tools/blob/main/LICENSE"><code>MIT License</code></a>
+<a href="https://github.com/hjl2011/OI-Tools/blob/main/LICENSE"><code>GPLv2</code></a>
 
 ## 鸣谢
 
