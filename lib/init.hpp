@@ -23,7 +23,6 @@ inline void Init() {
     commandlist.insert({"exit",Commands::exit});
     commandlist.insert({"help",Commands::help});
     commandlist.insert({"goto",Commands::_goto});
-    commandlist.insert({"wiki",Commands::wiki});
     commandlist.insert({"luogu-open",Commands::luogu_open});
     commandlist.insert({"hydro-open",Commands::hydro_open});
 }

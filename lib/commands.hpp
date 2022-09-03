@@ -28,10 +28,6 @@ namespace Commands {
         if(commands.size() != 1) return show_error(0);
         system(string("start " + _commands[0]).c_str());
     }
-    inline void wiki() {
-        if(commands.size()) return show_error(0);
-        system("start website/wiki.url");
-    }
     inline void luogu_open() {
         if(commands.size() != 1 && commands.size() != 2) return show_error(0);
         if(commands.size() == 1 && commands[0] == "ide") system("start https://www.luogu.com.cn/ide");
