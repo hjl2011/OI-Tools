@@ -27,3 +27,5 @@
 请勿更改 `Release` 中的 `TIMESTAMP` 文件，谢谢。
 
 建议使用 `vscode` 运行。
+
+暂时停止更新，欢迎使用 [OI-Toolbox](https://github.com/hjl2011/OI-Toolbox)。
