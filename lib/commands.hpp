@@ -48,6 +48,6 @@ namespace Commands {
         else show_error(0);
     }
     inline void calc() {
-        system(("powershell (" + command.erase(command.find("calc")) + ")").c_str());
+        system(("powershell (" + command.erase(command.find("calc"),4) + ")").c_str());
     }
 };

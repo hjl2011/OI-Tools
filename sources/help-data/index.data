@@ -1,3 +1,7 @@
+calc
+ - Calc. (Use the powershell.)
+ - {calc [expression]}
+
 exit
  - Quit this program.
  - {exit}
@@ -25,7 +29,3 @@ luogu-open
 version
  - Print version information.
  - {version}
-
-wiki
- - Jump to the wiki page. (In your default browser.)
- - {wiki}
