@@ -5,6 +5,7 @@
 #pragma once
 
 inline void Init() {
+    system("cls");
     string GenerateTimeStamp;
     ifstream TimeStampFile("TIMESTAMP");
     if(TimeStampFile.fail()) return show_error(1);
@@ -25,6 +26,7 @@ inline void Init() {
     commandlist.insert({"goto",Commands::_goto});
     commandlist.insert({"luogu-open",Commands::luogu_open});
     commandlist.insert({"hydro-open",Commands::hydro_open});
+    commandlist.insert({"calc",Commands::calc});
 }
 
 inline void CommandInit() {

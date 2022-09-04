@@ -47,4 +47,7 @@ namespace Commands {
         else if(commands.size() == 2 && commands[0] == "user") system(("start https://hydro.ac/user/" + _commands[1]).c_str());
         else show_error(0);
     }
+    inline void calc() {
+        system(("powershell (" + command.erase(command.find("calc")) + ")").c_str());
+    }
 };
