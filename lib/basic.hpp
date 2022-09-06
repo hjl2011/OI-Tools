@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "1.0.5"
+#define VERSION "1.0.6"
 
 /*
 x.y.z-alpha.c       Alpha
@@ -27,6 +27,7 @@ x.y.z               Preview
 #include <sstream>
 #include <deque>
 #include <io.h>
+#include <iomanip>
 using std::cin;
 using std::cout;
 using std::string;
@@ -40,6 +41,8 @@ using std::ios;
 using std::stringstream;
 using std::deque;
 using std::fstream;
+using std::setw;
+using std::setfill;
 
 string command,temp;
 map <string,function <void()> > commandlist;
@@ -47,6 +50,8 @@ map <string,function <void()> >::iterator func;
 deque <string> commands;
 deque <string> _commands;
 stringstream CommandInitStream;
+int LogID;
+SYSTEMTIME SysTime;
 
 inline void PrintERR(string str) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY | FOREGROUND_RED);

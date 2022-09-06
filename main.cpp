@@ -11,6 +11,7 @@
 int main() {
     Init();
     while(true) {
+        CreateLog(0,"Reading command ...");
         getline(cin,command);
         CommandInit();
         if(commands.size() == 0) {cout << "\n>>> ";continue;}

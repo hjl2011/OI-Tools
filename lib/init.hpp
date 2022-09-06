@@ -5,6 +5,8 @@
 #pragma once
 
 inline void Init() {
+    CreateLogFile();
+    CreateLog(0,"Initializing ...");
     system("cls");
     string GenerateTimeStamp;
     ifstream TimeStampFile("TIMESTAMP");
@@ -27,6 +29,7 @@ inline void Init() {
     commandlist.insert({"luogu-open",Commands::luogu_open});
     commandlist.insert({"hydro-open",Commands::hydro_open});
     commandlist.insert({"calc",Commands::calc});
+    CreateLog(0,"Start running...");
 }
 
 inline void CommandInit() {

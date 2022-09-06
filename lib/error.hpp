@@ -6,6 +6,7 @@
 
 inline void show_error(int errid) {
     if(!errid) {
+        CreateLog(2,"The command you entered does not exist.")
         PrintERR("Error: The command you entered does not exist.");
         return ;
     }
