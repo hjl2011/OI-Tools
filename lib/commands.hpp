@@ -50,4 +50,8 @@ namespace Commands {
     inline void calc() {
         system(("powershell (" + command.erase(command.find("calc"),4) + ")").c_str());
     }
+    inline void openlogfile() {
+        if(commands.size()) return show_error(0);
+        system(("start logs/" + to_string(LogID) + ".log").c_str());
+    }
 };

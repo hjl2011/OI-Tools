@@ -26,6 +26,10 @@ luogu-open
  - Open something.
  - {luogu-open [type] [id (optional)]}
 
+openlogfile
+ - Open the log file in your default editor.
+ - {openlogfile}
+
 version
  - Print version information.
  - {version}

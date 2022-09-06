@@ -6,7 +6,7 @@
 
 inline void Init() {
     CreateLogFile();
-    CreateLog(0,"Initializing ...");
+    CreateLog(0,"Initializing ...\n");
     system("cls");
     string GenerateTimeStamp;
     ifstream TimeStampFile("TIMESTAMP");
@@ -29,14 +29,18 @@ inline void Init() {
     commandlist.insert({"luogu-open",Commands::luogu_open});
     commandlist.insert({"hydro-open",Commands::hydro_open});
     commandlist.insert({"calc",Commands::calc});
-    CreateLog(0,"Start running...");
+    commandlist.insert({"openlogfile",Commands::openlogfile});
+    CreateLog(0,"Start running...\n");
 }
 
 inline void CommandInit() {
     commands.clear(),_commands.clear(),CommandInitStream.clear(),CommandInitStream.str(command);
+    CreateLog(1,"Command array = {");
     while(CommandInitStream >> temp) {
         _commands.push_back(temp);
         for(int i = 0;i < temp.length();i++) if((temp[i] >= 'a' && temp[i] <= 'z') || (temp[i] >= 'A' && temp[i] <= 'Z')) temp[i] |= 32;
         commands.push_back(temp);
     }
+    for(int i = 0;i < _commands.size() - 1;i++) CreateLog(-1,_commands[i] + ",");
+    CreateLog(-1,_commands[_commands.size() - 1] + "}\n");
 }
