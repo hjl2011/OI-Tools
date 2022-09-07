@@ -1,3 +1,7 @@
+about
+ - Print program information.
+ - {about}
+
 calc
  - Calc. (By the powershell.)
  - {calc [expression]}
@@ -29,7 +33,3 @@ luogu-open
 openlogfile
  - Open the log file in your default editor.
  - {openlogfile}
-
-version
- - Print version information.
- - {version}
