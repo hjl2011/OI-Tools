@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "1.0.8"
+#define VERSION "1.0.9"
 
 /*
 x.y.z-alpha.c       Alpha
@@ -81,7 +81,7 @@ inline void CreateLog(int LogType,string LogContent) {
     _LogStream << " [" << SysTime.wYear << ".";
     _LogStream << setfill('0')  << setw(2) << SysTime.wMonth << ".";
     _LogStream << setfill('0')  << setw(2) << SysTime.wDay << " ";
-    _LogStream << setfill('0')  << setw(2) << SysTime.wHour << " ";
+    _LogStream << setfill('0')  << setw(2) << SysTime.wHour << ":";
     _LogStream << setfill('0')  << setw(2) << SysTime.wMinute << ":";
     _LogStream << setfill('0')  << setw(2) << SysTime.wSecond << ".";
     _LogStream << setfill('0')  << setw(3) << SysTime.wMilliseconds;

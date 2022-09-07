@@ -10,9 +10,12 @@ inline void show_error(int id,string str) {
         PrintERR("Error: " + str);
         return ;
     }
-    string err = "Oops!\nAn error occurred.\nError message :  ";
-    err += (id != -1 ? to_string(id) : "") + " " + str;
-    err += "\n\nWould you like to visit the Issues page now?";
-    if(MessageBox(nullptr,err.c_str(),"OI-Tools Error",MB_YESNO | MB_ICONERROR) == IDYES) system("start website/issues.url");
+    system("cls");
+    PrintERR("OI-Tools Error\n\n");
+    PrintERR("--------------------------------------------------\n");
+    PrintERR("Oops!\nAn error occurred.\nError message :  ");
+    PrintERR((id != -1 ? to_string(id) : "") + " " + str);
+    PrintERR("\n\nIssues page : https://github.com/hjl2011/OI-Tools/issues \n");
+    PrintERR("--------------------------------------------------");
     exit(0);
 }

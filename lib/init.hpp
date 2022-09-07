@@ -6,15 +6,15 @@
 
 void SignalHandler() {
     signal(SIGINT,[](int _sign) {
-        CreateLog(3,"Signal " + to_string(_sign) + " detected (Program interrupted)\n");
+        CreateLog(3,"Signal " + to_string(_sign) + " detected. (Program interrupted)\n");
         show_error(_sign,"Program interrupted");
     });
     signal(SIGBREAK,[](int _sign) {
-        CreateLog(3,"Signal " + to_string(_sign) + " detected (Program broke)\n");
+        CreateLog(3,"Signal " + to_string(_sign) + " detected. (Program broke)\n");
         show_error(_sign,"Program broke");
     });
     signal(SIGABRT,[](int _sign) {
-        CreateLog(3,"Signal " + to_string(_sign) + " detected (Program aborted)\n");
+        CreateLog(3,"Signal " + to_string(_sign) + " detected. (Program aborted)\n");
         show_error(_sign,"Program aborted");
     });
 }
@@ -51,12 +51,13 @@ inline void Init() {
 
 inline void CommandInit() {
     commands.clear(),_commands.clear(),CommandInitStream.clear(),CommandInitStream.str(command);
-    CreateLog(1,"Command array = {");
     while(CommandInitStream >> temp) {
         _commands.push_back(temp);
         for(int i = 0;i < temp.length();i++) if((temp[i] >= 'a' && temp[i] <= 'z') || (temp[i] >= 'A' && temp[i] <= 'Z')) temp[i] |= 32;
         commands.push_back(temp);
     }
+    if(commands.size() == 0) return CreateLog(1,"Command array = {}\n");
+    CreateLog(1,"Command array = {");
     for(int i = 0;i < _commands.size() - 1;i++) CreateLog(-1,_commands[i] + ",");
     CreateLog(-1,_commands[_commands.size() - 1] + "}\n");
 }
