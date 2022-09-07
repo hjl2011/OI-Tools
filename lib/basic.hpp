@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "1.0.7"
+#define VERSION "1.0.8"
 
 /*
 x.y.z-alpha.c       Alpha
@@ -28,6 +28,7 @@ x.y.z               Preview
 #include <deque>
 #include <io.h>
 #include <iomanip>
+#include <signal.h>
 using std::cin;
 using std::cout;
 using std::string;

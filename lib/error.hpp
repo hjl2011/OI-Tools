@@ -4,16 +4,14 @@
 
 #pragma once
 
-inline void show_error(int errid) {
-    if(!errid) {
-        CreateLog(2,"The command you entered does not exist.\n");
-        PrintERR("Error: The command you entered does not exist.");
+inline void show_error(int id,string str) {
+    if(!id) {
+        CreateLog(2,str + "\n");
+        PrintERR("Error: " + str);
         return ;
     }
-    string err = string("Oops!\nAn error occurred.\nError message :  ") + to_string(errid) + " ";
-    if(errid == -1) err += "Unknown Error";
-    else if(errid == 1) err += "File does not exist";
-    else err += "Unknown Error";
+    string err = "Oops!\nAn error occurred.\nError message :  ";
+    err += (id != -1 ? to_string(id) : "") + " " + str;
     err += "\n\nWould you like to visit the Issues page now?";
     if(MessageBox(nullptr,err.c_str(),"OI-Tools Error",MB_YESNO | MB_ICONERROR) == IDYES) system("start website/issues.url");
     exit(0);

@@ -4,13 +4,29 @@
 
 #pragma once
 
+void SignalHandler() {
+    signal(SIGINT,[](int _sign) {
+        CreateLog(3,"Signal " + to_string(_sign) + " detected (Program interrupted)\n");
+        show_error(_sign,"Program interrupted");
+    });
+    signal(SIGBREAK,[](int _sign) {
+        CreateLog(3,"Signal " + to_string(_sign) + " detected (Program broke)\n");
+        show_error(_sign,"Program broke");
+    });
+    signal(SIGABRT,[](int _sign) {
+        CreateLog(3,"Signal " + to_string(_sign) + " detected (Program aborted)\n");
+        show_error(_sign,"Program aborted");
+    });
+}
+
 inline void Init() {
+    SignalHandler();
     CreateLogFile();
     CreateLog(0,"Initializing ...\n");
     system("cls");
     string GenerateTimeStamp;
     ifstream TimeStampFile("TIMESTAMP");
-    if(TimeStampFile.fail()) return show_error(1);
+    if(TimeStampFile.fail()) return show_error(1,"File does not exist");
     TimeStampFile >> GenerateTimeStamp;
     TimeStampFile.close();
     cout << "OI-Tools | v";
