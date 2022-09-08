@@ -26,7 +26,7 @@ inline void Init() {
     system("cls");
     string GenerateTimeStamp;
     ifstream TimeStampFile("TIMESTAMP");
-    if(TimeStampFile.fail()) return show_error(1,"File does not exist");
+    if(TimeStampFile.fail()) return show_error(-1,"File does not exist");
     TimeStampFile >> GenerateTimeStamp;
     TimeStampFile.close();
     cout << "OI-Tools | v";
