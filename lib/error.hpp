@@ -5,7 +5,7 @@
 #pragma once
 
 inline void show_error(int id,string str) {
-    CreateLog(2,str + "\n");
+    if(id <= 0) CreateLog(2,str + "\n");
     if(!id) return PrintERR("Error: " + str);
     system("cls");
     string Err = "OI-Tools Error\n\nOops!\nAn error occurred.\nError message :  ";
