@@ -1,9 +1,10 @@
-Jump to a web address. (In your default browser.)
+Jump to a web address (or a file address). (In your default browser/editor.)
 
 Usage: goto [url]
 
 Uncorrect:
-    goto "https://hjl2011.github.io/OI-Tools/"
+    goto "https://www.baidu.com/"
 
 Correct:
-    goto https://hjl2011.github.io/OI-Tools/
+    goto https://www.baidu.com/          # web address
+    goto .                               # file address

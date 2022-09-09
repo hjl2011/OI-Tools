@@ -11,7 +11,7 @@ exit
  - {exit}
 
 goto
- - Jump to a web address. (In your default browser.)
+ - Jump to a web address (or a file address). (In your default browser/editor.)
  - {goto [url]}
 
 help

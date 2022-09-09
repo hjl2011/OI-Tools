@@ -15,8 +15,7 @@ int main() {
         CommandInit();
         if(commands.size() == 0) {cout << "\n>>> ";continue;}
         func = commandlist.find(commands[0]);
-        commands.pop_front();
-        _commands.pop_front();
+        commands.pop_front(),_commands.pop_front();
         if(func == commandlist.end()) show_error(0,"The command you entered does not exist.");
         else func -> second();
         cout << "\n>>> ";

@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define VERSION "1.1.2"
+#define VERSION "1.1.3 (Release)"
 
 /*
 x.y.z-alpha.c       Alpha
