@@ -10,5 +10,6 @@
 
 # Local Files/Folders
 src/
+*.dll
 *.py
 generate.cpp
